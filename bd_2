@@ -1,0 +1,28 @@
+CREATE DATABASE projetos1;
+USE projetos1;
+
+CREATE TABLE ALUNOS(
+	cpf VARCHAR(15) PRIMARY KEY,
+    rm INTEGER(8),
+    nome VARCHAR(55),
+    turma_id INTEGER,
+    projetos_id INTEGER
+);
+CREATE TABLE TURMA(
+	turmas_id VARCHAR PRIMARY KEY,
+    serie INTEGER,
+    curso_id VARCHAR,
+    turno_id VARCHAR
+);
+CREATE TABLE TURNOS(
+	turnos_id VARCHAR PRIMARY KEY,
+    periodo VARCHAR
+);
+CREATE TABLE CURSOS(
+	cursos_id VARCHAR PRIMARY KEY,
+    nomes VARCHAR
+);
+CREATE TABLE PROJETOS(
+	projetos_id VARCHAR PRIMARY KEY,
+    titulo VARCHAR
+);
