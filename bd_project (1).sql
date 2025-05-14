@@ -187,6 +187,7 @@ ALTER TABLE `turmas`
   ADD PRIMARY KEY (`turmas_id`),
   ADD KEY `cursos_id` (`cursos_id`),
   ADD KEY `projetos_id` (`projetos_id`);
+  ADD KEY 'turnos_id' ('turnos_id');
 
 --
 -- Índices de tabela `turnos`
